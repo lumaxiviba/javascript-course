@@ -6,78 +6,114 @@
     <title>Document</title>
   </head>
   <body>
+    <h1>Fundamentos JavaScript</h1>
+
     <script>
       /* var hola = "Hola mundo.";
-      let hello = "Hello World";
-      console.log(hola);
-      console.log(hello);
-      console.log(window.hola);
-      console.log(window.hello);
-      console.log("********** var **********");
-      // Ambito de bloque
-      var musica = "Rock";
-      console.log("Variable Música antes del Bloque", musica);
-      // Esto es un boque - comentario de una línea
-      /* Esto es un comentario de
-      varias líneas */ /*
-      {
-        var musica = "Pop";
-        console.log("Variable Música dentro del bloque", musica);
-      }
-      console.log("Variable Música después del bloque", musica);
-      console.log("********** let **********");
-      let musica2 = "Rock";
-      console.log("Variable Música antes del Bloque", musica2);
+          let hello = "Hello World";
+          console.log(hola);
+          console.log(hello);
+          console.log(window.hola);
+          console.log(window.hello);
+          console.log("********** var **********");
+          // Ambito de bloque
+          var musica = "Rock";
+          console.log("Variable Música antes del Bloque", musica);
+          // Esto es un boque - comentario de una línea
+          /* Esto es un comentario de
+          varias líneas */ /*
+          {
+            var musica = "Pop";
+            console.log("Variable Música dentro del bloque", musica);
+          }
+          console.log("Variable Música después del bloque", musica);
+          console.log("********** let **********");
+          let musica2 = "Rock";
+          console.log("Variable Música antes del Bloque", musica2);
 
-      {
-        let musica2 = "Pop";
-        console.log("Variable Música dentro del bloque", musica2);
-      }
-      console.log("Variable Música después del bloque", musica2); */
+          {
+            let musica2 = "Pop";
+            console.log("Variable Música dentro del bloque", musica2);
+          }
+          console.log("Variable Música después del bloque", musica2); */
 
       /* let a;
-      const PI = 3.1416;
-      // const NUEVE;
-      // PI = 3.15;
-      console.log(PI);
-      a = "kenai";
-      console.log(a);
-      const objeto = {
-        nombre: "Máximo",
-        edad: 18,
-      };
+          const PI = 3.1416;
+          // const NUEVE;
+          // PI = 3.15;
+          console.log(PI);
+          a = "kenai";
+          console.log(a);
+          const objeto = {
+            nombre: "Máximo",
+            edad: 18,
+          };
 
-      const colores = ["blanco", "negro", "azul"];
+          const colores = ["blanco", "negro", "azul"];
 
-      console.log(objeto);
-      console.log(colores);
+          console.log(objeto);
+          console.log(colores);
 
-      objeto.correo = "lumaxiviba@gmail.com";
-      colores.push("anaranjado");
-      console.log(objeto);
-      console.log(colores); */
+          objeto.correo = "lumaxiviba@gmail.com";
+          colores.push("anaranjado");
+          console.log(objeto);
+          console.log(colores); */
 
       // Cadenas de Texto aka Strings
 
       /* let nombre = "Maxi";
-      let apellido = "Vivas";
-      let saludo = new String("Jola mundo");
-      let lorem =
-        "     Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel reiciendis possimus quasi officiis eos similique               tenetur dicta fugiat, amet consequatur est accusantium exercitationem qui dolore          vero quo quidem dolorum nihil!";
-      console.log(nombre, apellido, saludo);
-      console.log(
-        nombre.length,
-        apellido.length,
-        saludo.length,
+          let apellido = "Vivas";
+          let saludo = new String("Jola mundo");
+          let lorem =
+            "     Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel reiciendis possimus quasi officiis eos similique               tenetur dicta fugiat, amet consequatur est accusantium exercitationem qui dolore          vero quo quidem dolorum nihil!";
+          console.log(nombre, apellido, saludo);
+          console.log(
+            nombre.length,
+            apellido.length,
+            saludo.length,
 
-        nombre.toUpperCase(),
-        apellido.toUpperCase(),
-        lorem,
-        lorem.includes("Maxito"),
-        lorem.trim(),
-        lorem.split(","),
-        lorem.split("")
-      ); */
+            nombre.toUpperCase(),
+            apellido.toUpperCase(),
+            lorem,
+            lorem.includes("Maxito"),
+            lorem.trim(),
+            lorem.split(","),
+            lorem.split("")
+          ); */
+
+      let nombre = "Lucciano";
+      let apellido = "Vivas";
+
+      // Concatenación
+      let saludo = "Hola, mi nombre es: " + nombre + " " + apellido + ".";
+      console.log(saludo);
+
+      // Interpolación de variables
+      // Template String
+      let saludo2 = `Hola, mi nombre es ${nombre} y mi apellido es ${apellido}.`;
+      console.log(saludo2);
+
+      let ul =
+        " <ul> <li>Primavera</li> <li>Verano</li> <li>Invierno</li> <li>Otoño</li> </ul> ";
+      console.log(ul);
+
+      let ul2 = `
+         <ul>
+        <li>Primavera</li>
+        <li>Verano</li>
+        <li>Invierno</li>
+        <li>Otoño</li>
+      </ul>
+        `;
+      console.log(ul2);
+
+      let ul3 = "<ul>";
+      ul3 += "<li>Primavera</li>";
+      ul3 += "<li>Verano</li>";
+      ul3 += "<li>Invierno</li>";
+      ul3 += "<li>Otoño</li>";
+      ul3 += "</ul>";
+      console.log(ul3);
     </script>
   </body>
 </html>
