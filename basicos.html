@@ -726,6 +726,7 @@
       lolaBunny.sonar();
       lolaBunny.saludar(); */
 
+      /*
       class Animal {
         // Atributos
         constructor(nombre, genero) {
@@ -790,7 +791,97 @@
       scooby.ladrar();
       console.log(scooby.getRaza);
       scooby.setRaza = "Gran Danés";
-      console.log(scooby.getRaza);
+      console.log(scooby.getRaza); 
+      */
+
+      console.log(console);
+      console.error("Esto es un error");
+      console.warn("Esto es un aviso");
+      console.info("Esto es un mensaje informativo");
+      console.log("Un registro de lo que ha pasado en nuestra aplicación");
+
+      let nombre = "Maxi",
+        apellido = "Vivas",
+        edad = 35;
+
+      console.log(nombre);
+      console.log(apellido);
+      console.log(edad);
+      console.log(nombre, edad, apellido);
+      console.log(
+        `Hola, mi nombre es ${nombre} ${apellido} y mi edad es de ${edad}`
+      );
+      console.log(
+        `Hola, mi nombre es %s %s y mi edad es de %d años`,
+        nombre,
+        apellido,
+        edad
+      );
+      console.clear();
+
+      console.log(window);
+      console.log(document);
+      console.dir(window);
+      console.dir(document);
+
+      console.group("Los cursos de @jonmircha:");
+      console.log("Curso de JavaScript");
+      console.log("Curso de React");
+      console.log("Curso de NodeJS");
+      console.log("Curso de Grid");
+      console.log("Curso de Flexbox");
+      console.groupEnd();
+
+      console.groupCollapsed("Los cursos de @jonmircha:");
+      console.log("Curso de JavaScript");
+      console.log("Curso de React");
+      console.log("Curso de NodeJS");
+      console.log("Curso de Grid");
+      console.log("Curso de Flexbox");
+      console.groupEnd();
+      console.clear();
+      console.log(console);
+      console.table(Object.entries(console).sort());
+
+      const numeros = [1, 2, 3, 4, 5],
+        vocales = ["a", "e", "i", "o", "u"];
+
+      console.table(numeros);
+      console.table(vocales);
+
+      const perro = {
+        nombre: "bonnie",
+        color: "café",
+        raza: "boxer",
+      };
+
+      console.table(perro);
+
+      console.clear();
+
+      console.time("Cuánto tiempo tarda mi código");
+      const arreglo = Array(1000000);
+
+      for (let i = 0; i < arreglo.length; i++) {
+        arreglo[i] = i;
+      }
+
+      console.timeEnd("Cuánto tiempo tarda mi código");
+      // console.log(arreglo);
+      console.clear();
+
+      for (let i = 0; i <= 100; i++) {
+        console.count("código for");
+        console.log(i);
+      }
+
+      console.clear();
+
+      let x = 1,
+        y = 2,
+        pruebaXY = "Se espera que X siempre sea menor que Y";
+
+      console.assert(x < y, { x, y, pruebaXY });
     </script>
   </body>
 </html>
