@@ -726,7 +726,6 @@
       lolaBunny.sonar();
       lolaBunny.saludar(); */
 
-      /*
       class Animal {
         // Atributos
         constructor(nombre, genero) {
@@ -746,8 +745,10 @@
 
       class Perro extends Animal {
         constructor(nombre, genero, tamanio) {
+          // Con el método super() mando a llamar el constructor de la clase padre
           super(nombre, genero);
           this.tamanio = tamanio;
+          this.raza = null;
         }
 
         sonar() {
@@ -756,7 +757,26 @@
         ladrar() {
           console.log("GUAU GUAUUUUUUU!!!!!");
         }
+
+        // Métodos Estaticos: Pueden usarse sin necesidad de instanciar la clase
+        static queEres() {
+          console.log(
+            "Soy un mamífero de cuatro patas, considerado por muchos, el mejor amigo del hombre."
+          );
+        }
+
+        // Los setters y getters son métodos especiales que nos permiten establecer y obtener los valores de atributos de nuestra clase.
+
+        get getRaza() {
+          return this.raza;
+        }
+
+        set setRaza(raza) {
+          this.raza = raza;
+        }
       }
+
+      Perro.queEres();
 
       const mimi = new Animal("Mimi", "Hembra"),
         scooby = new Perro("Scooby", "Macho", "Gigante");
@@ -768,7 +788,9 @@
       scooby.saludar();
       scooby.sonar();
       scooby.ladrar();
-       */
+      console.log(scooby.getRaza);
+      scooby.setRaza = "Gran Danés";
+      console.log(scooby.getRaza);
     </script>
   </body>
 </html>
