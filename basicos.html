@@ -916,7 +916,7 @@
       let cumplemaxi = new Date(2006, 7, 22);
       console.log(cumplemaxi); */
 
-      console.log(Math);
+      /* console.log(Math);
       console.log(Math.PI);
       console.log(Math.abs(-7.8));
       console.log(Math.ceil(7.2));
@@ -926,7 +926,43 @@
       console.log(Math.pow(2, 4));
       console.log(Math.sign(-7.8)); // -1 0 1
       console.log(Math.random());
-      console.log(Math.round(Math.random() * 1000));
+      console.log(Math.round(Math.random() * 1000)); */
+
+      /* 
+      Cortocircuito OR - cuando el valor de la izquierda en la expresión siempre puede validar a true, es el valor que se cargará por defecto
+
+      Cortocircuito AND - cuando el valor de la izquierda en la expresión siempre pueda validar a false, es el valor que se cargará por defecto
+      */
+
+      function saludar(nombre) {
+        nombre = nombre || "Desconocido";
+        console.log(`Hola ${nombre}.`);
+      }
+
+      saludar("Maxi");
+      saludar();
+
+      console.log("cadena" || "Valor de la derecha");
+      console.log(8 || "Valor de la derecha");
+      console.log(true || "Valor de la derecha");
+      console.log([] || "Valor de la derecha");
+      console.log({} || "Valor de la derecha");
+      console.log(false || "Valor de la derecha");
+      console.log(undefined || "Valor de la derecha");
+      console.log(null || "Valor de la derecha");
+      console.log("" || "Valor de la derecha");
+      console.log(0 || "Valor de la derecha");
+
+      console.log(false && "Valor de la derecha");
+      console.log(undefined && "Valor de la derecha");
+      console.log(null && "Valor de la derecha");
+      console.log("" && "Valor de la derecha");
+      console.log(0 && "Valor de la derecha");
+      console.log("cadena" && "Valor de la derecha");
+      console.log(8 && "Valor de la derecha");
+      console.log(true && "Valor de la derecha");
+      console.log([] && "Valor de la derecha");
+      console.log({} && "Valor de la derecha");
     </script>
   </body>
 </html>
