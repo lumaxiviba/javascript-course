@@ -934,6 +934,7 @@
       Cortocircuito AND - cuando el valor de la izquierda en la expresión siempre pueda validar a false, es el valor que se cargará por defecto
       */
 
+      /*
       function saludar(nombre) {
         nombre = nombre || "Desconocido";
         console.log(`Hola ${nombre}.`);
@@ -963,6 +964,24 @@
       console.log(true && "Valor de la derecha");
       console.log([] && "Valor de la derecha");
       console.log({} && "Valor de la derecha");
+      */
+
+      console.log(window);
+      // alert("Hola, esto es una alerta.");
+      // confirm("Hola, esto es una confirmación.");
+      // prompt(
+      //   "Hola, esto es una prompt y le permite al usuario ingresar un valor"
+      // );
+
+      let alerta = alert("Hola, esto es una alerta."),
+        confirmacion = confirm("Hola, esto es una confirmación."),
+        aviso = prompt(
+          "Hola, esto es un aviso y le permite al usuario ingresar un valor"
+        );
+
+      console.log(alerta);
+      console.log(confirmacion);
+      console.log(aviso);
     </script>
   </body>
 </html>
