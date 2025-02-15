@@ -928,7 +928,7 @@
       console.log(Math.random());
       console.log(Math.round(Math.random() * 1000)); */
 
-      /* 
+      /*
       Cortocircuito OR - cuando el valor de la izquierda en la expresión siempre puede validar a true, es el valor que se cargará por defecto
 
       Cortocircuito AND - cuando el valor de la izquierda en la expresión siempre pueda validar a false, es el valor que se cargará por defecto
@@ -966,7 +966,7 @@
       console.log({} && "Valor de la derecha");
       */
 
-      console.log(window);
+      /* console.log(window);
       // alert("Hola, esto es una alerta.");
       // confirm("Hola, esto es una confirmación.");
       // prompt(
@@ -981,7 +981,22 @@
 
       console.log(alerta);
       console.log(confirmacion);
-      console.log(aviso);
+      console.log(aviso); */
+
+      /*
+      Expresiones Regulares
+          Son una secuencia de caracteres que forma un patrón
+          de búsqueda, principalmente utilizada para la búsqueda de patrones de cadenas de caracteres
+        */
+      let cadena =
+        "Lorem impusm xd cdfowekjfopjfnefodandfsiasjfcsajfisjfsajfajcsajc asijafjsaj cafjsfsajdaaaaaaaaaaaa el pepe ete sech uwuwuwuwuwuwuwuuw unudolorem hola";
+      // let expReg = new RegExp("lorem", "ig");
+      // console.log(expReg.test(cadena));
+      // console.log(expReg.exec(cadena));
+
+      let expReg2 = /lorem{3,1}/gi;
+      console.log(expReg2.test(cadena));
+      console.log(expReg2.exec(cadena));
     </script>
   </body>
 </html>
